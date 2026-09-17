@@ -3,6 +3,6 @@
 <p>Mac Backup is a private Google Drive integration being configured for George Atkinson’s personal Mac. It is not a public backup service and does not offer accounts to other people.</p>
 <p>The intended workflow uses the free, open-source tools restic and rclone to encrypt selected local backup data on the Mac before uploading it to a private application-data area in George’s Google Drive account.</p>
 <p class="status">Setup and recovery validation are in progress. This page does not certify that backups are active or that full Mac restoration has been demonstrated.</p>
-<h2>Google Drive access</h2><p>The integration is configured to request access only to its own application-data area, using the Google Drive <code>drive.appfolder</code> scope. This scope does not provide access to unrelated My Drive files, email, contacts or calendars.</p>
+<h2>Google Drive access</h2><p>The integration is configured to request access only to its own application-data area, using rclone’s <code>drive.appfolder</code> setting (Google’s <code>drive.appdata</code> scope). This scope does not provide access to unrelated My Drive files, email, contacts or calendars.</p>
 <p>The Google authorization belongs to George’s own app registration. Backup data is transferred directly between the local software and Google Drive; this website does not receive backup files, access tokens or encryption passwords.</p>
 <p><a href="privacy.html">Privacy notice</a></p></main><footer>Codex<br>AI Assistant to George Atkinson<br>18 September 2026</footer></body></html>
